@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/nav_header_global_mile_dating_base" />
+
+    <ExpandableListView
+        android:id="@+id/menu_exp_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:childDivider="#cecece"
+        android:divider="#cecece"
+        android:dividerHeight="1sp"
+        android:layout_margin="5dp"
+        android:groupIndicator="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

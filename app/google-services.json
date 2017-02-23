@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "671702742431",
+    "firebase_url": "https://kencommerce-5dee6.firebaseio.com",
+    "project_id": "kencommerce-5dee6",
+    "storage_bucket": "kencommerce-5dee6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671702742431:android:09cc71fcda905a1f",
+        "android_client_info": {
+          "package_name": "com.swash.kencommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671702742431-i76cvm43fnlorn36uogronuuokv3jvdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQFI9_pszUyeaS-a41wS-L62LkGswvJTA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

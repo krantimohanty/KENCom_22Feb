@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="check_out_bg">#F5F5F5</color>
+    <color name="transparent_other">#66000000</color>
+    <color name="header_color">#FBAE2E</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#a9a9a9</color>
+    <color name="grey_dark">#202020</color>
+    <color name="grey_light">#ededed</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#cc0909</color>
+    <color name="red_checkout">#e11349</color>
+    <color name="white_transparent">#D9FFFFFF</color>
+    <color name="green">#A4BB25</color>
+    <color name="orange">#FD8607</color>
+    <color name="dot_active">#545454</color>
+    <color name="dot_inactive">#B6BDBF</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="left_nav_bar_color">#898989</color>
+    <color name="goldtag_bg_color">#EAC468</color>
+    <color name="platinumtag_bg_color">#75CFD3</color>
+    <color name="premiumtag_bg_color">#35BCA5</color>
+    <color name="free_trial_bg_color">#dd2323</color>
+    <color name="silvertag_bg_color">#A8A8A8</color>
+
+
+    <color name="slider_footer_bg_color">#001521</color>
+    <color name="btn_bg_color">#007AFF</color>
+
+    <color name="app_theme_yellow">#FBAE3C</color>
+    <color name="app_theme_blue">#048BCD</color>
+    <color name="app_theme_green">#70B74E</color>
+
+    <color name="progressdialog_transparent">#10a42424</color>
+
+    <color name="grey_bg">#eeeeee</color>
+    <color name="border_box">#939393</color>
+
+    <color name="btn_bg_color_reset">#AFAFAF</color>
+    <color name="btn_bg_wishlst_delete">#E11349</color>
+</resources>

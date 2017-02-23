@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:text="Popularity"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_h2l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:text="Price: High to Low"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_l2h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:text="Price: Low to High"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_a2z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:text="Name: A to Z"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_z2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:text="Name: Z to A"
+        android:textColor="@color/black"/>
+</LinearLayout>

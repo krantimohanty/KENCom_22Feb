@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ffffff"
+    android:padding="15dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    android:background="#fff"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#007acd"
+    android:id="@+id/rel1"
+    android:layout_alignParentTop="true"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Notice"
+        android:id="@+id/header"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:layout_above="@+id/rel2"
+        android:id="@+id/msg"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:id="@+id/rel2"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:text="No "
+            android:textStyle="bold"
+            android:id="@+id/btn_no"
+
+            android:layout_margin="5dp"
+            android:textSize="13sp"
+            android:background="@color/slider_footer_bg_color"
+
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:id="@+id/btn_yes"
+            android:gravity="center|center_vertical"
+            android:layout_margin="5dp"
+            android:textSize="13sp"
+            android:background="@color/slider_footer_bg_color"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

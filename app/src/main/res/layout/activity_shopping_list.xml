@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg">
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center_vertical"
+        android:weightSum="100"
+        android:background="#FBAE2E"
+        >
+
+        <RelativeLayout
+            android:id="@+id/lin_back"
+            android:layout_width="0dp"
+            android:layout_weight="100"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_btn"
+                android:padding="@dimen/padding_normal"
+                android:elevation="4dp"
+                android:shadowColor="#cecece"
+
+
+                android:layout_gravity="left|center_vertical"/>
+            <TextView
+                android:id="@+id/tv_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:elevation="4dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:shadowColor="#cecece"
+                android:text="Sign In"/>
+            <LinearLayout
+                android:id="@+id/lin_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:id="@+id/img_cart_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bottomcart_icon"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="4dp"
+                    android:shadowColor="#cecece"
+                    android:layout_gravity="center|center_vertical"/>
+                <Button
+                    android:id="@+id/btn_count"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center|center_vertical"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:textColor="#048bcd"
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:shadowColor="#cecece"
+                    android:visibility="visible"
+                    android:text="1"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_option_height"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_option_menu"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/padding_large"/>
+
+           <com.swash.kencommerce.ExpandableHeightListView
+                android:id="@+id/lv_shoping_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/app_theme_green"
+                android:elevation="5dp"
+                android:textSize="16sp"
+                android:text="DONE"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a new list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_option_menu"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="@dimen/padding_normal"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_normal"/>
+            <LinearLayout
+                android:id="@+id/lin_add_new_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal"
+                android:layout_margin="@dimen/padding_normal"
+                android:background="@drawable/edittext_rectangle_border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ "
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Add a new list"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

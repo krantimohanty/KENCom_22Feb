@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_custom_top_green"
+        android:background="@color/app_theme_green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:id="@+id/header"
+        android:background="@color/app_theme_green"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/padding_extream_large"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_normal"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_back"
+            android:text="My Cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/padding_normal"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_vendor_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:background="@color/black"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:visibility="invisible"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="0"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="ABCD Castilo Kitchen"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:weightSum="99">
+            <TextView
+                android:id="@+id/txt_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/white"
+                android:text="R900.54"
+                android:layout_marginRight="@dimen/margin_10"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_vendor_name"
+        android:layout_above="@+id/lin_bottom_bar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <com.swash.kencommerce.ExpandableHeightListView
+                android:id="@+id/lv_add_to_cart_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/grey"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="none"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginBottom="@dimen/padding_large"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrl_view"
+        android:layout_above="@+id/lin_bottom_bar"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_no_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:text="Your cart is empty\n\n Tap on items you'd like to buy to add them to your basket"
+            android:textSize="@dimen/large_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_theme_blue"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_checkout"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_checkout"
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="Proceed To Checkout"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

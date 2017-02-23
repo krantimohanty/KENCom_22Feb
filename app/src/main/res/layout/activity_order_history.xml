@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_option_height"
+        android:background="@color/app_theme_yellow"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_btn"
+            android:padding="@dimen/padding_normal"
+            android:shadowColor="#cecece"
+            android:layout_gravity="center|center_vertical"/>
+        <TextView
+            android:id="@+id/txt_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:text="Order History"
+            android:textSize="@dimen/large_text_size"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/txt_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="@dimen/large_text_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hearder_height"
+            android:text="Order No : "
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_normal"
+            android:textSize="@dimen/large_text_size"/>
+        <TextView
+            android:id="@+id/txt_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hearder_height"
+            android:text=" 153678499"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+
+            android:textSize="@dimen/large_text_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hearder_height"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_small"
+            android:textSize="@dimen/large_text_size"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_past_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/menu_option_height"
+        android:layout_below="@+id/ll_subheader"
+        android:divider="@null"
+        android:background="@color/grey_light"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_option_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_theme_blue"
+        android:text="Order Summary"
+        android:textSize="@dimen/medium_text_size"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+</RelativeLayout>

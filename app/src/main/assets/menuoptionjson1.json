@@ -1,0 +1,98 @@
+{"parentMenu":[
+  {
+    "menuName": "Our Stores",
+    "menuId": "1",
+    "menuoption": [
+      {
+        "menuName": "Welcome",
+        "menuId": "6"
+
+      },
+      {
+        "menuName": "Gourmet Treats",
+        "menuId": "7"
+      },
+      {
+        "menuName": "Day-To-Day",
+        "menuId": "8"
+      },
+      {
+        "menuName": "Gifts",
+        "menuId": "9"
+      },
+      {
+        "menuName": "Events & Services",
+        "menuId": "10"
+      }
+
+    ]
+  },
+  {
+    "menuName": "Profile",
+    "menuId": "2",
+    "menuoption": [
+      {
+        "menuName": "My Details",
+        "menuId": "11"
+
+      },{
+        "menuName": "Payment Details",
+        "menuId": "12"
+
+      },
+      {
+        "menuName": "My Addresses",
+        "menuId": "13"
+      },{
+        "menuName": "Wishlist",
+        "menuId": "14"
+
+      },
+      {
+        "menuName": "Shopping Lists",
+        "menuId": "15"
+      },
+      {
+        "menuName": "Past Orders",
+        "menuId": "16"
+      }
+    ]
+  },
+  {
+    "menuName": "Cart",
+    "menuId": "3"
+  },
+
+
+  {
+    "menuName": "Sign In",
+    "menuId": "4"
+  },
+  {
+    "menuName": "Support",
+    "menuId": "5",
+    "menuoption": [
+      {
+        "menuName": "Where We Serve",
+        "menuId": "17"
+
+      },
+      {
+        "menuName": "FAQs",
+        "menuId": "18"
+
+      },
+      {
+        "menuName": "Privacy Policy",
+        "menuId": "19"
+
+      },
+      {
+        "menuName": "Terms & Conditions",
+        "menuId": "20"
+
+      }
+    ]
+  }
+
+]}

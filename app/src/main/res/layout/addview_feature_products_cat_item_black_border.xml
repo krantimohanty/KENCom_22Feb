@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_cat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_product_bottle_height"
+            android:paddingLeft="@dimen/padding_extra_large"
+            android:paddingRight="@dimen/padding_extream_large"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/landing_mainproduct"/>
+        <ImageView
+            android:id="@+id/img_special"
+            android:layout_width="@dimen/spc_tag_width"
+            android:layout_height="@dimen/spc_tag_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/spcl_tag"/>
+        <ImageView
+            android:id="@+id/img_on_demand"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_special"
+            android:src="@drawable/subcategory_ondmnd_icon"
+            android:visibility="invisible"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="R399.54"
+            android:gravity="right"
+            android:textSize="12dp"
+            android:textColor="#048bcd"
+            />
+            <TextView
+                android:id="@+id/tv_cat_qnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="750 ml"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:layout_below="@+id/tv_price"
+                />
+        <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/plus_icon_cat_details"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_cat_qnt"
+            />
+        <ImageView
+            android:id="@+id/img_wish"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/wish_icon_cat_details"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/img_plus"
+            />
+
+        <TextView
+            android:id="@+id/tv_cat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Cruz Vintage Black"
+            android:gravity="left|bottom"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+
+            android:layout_above="@+id/tv_cat_details"
+            />
+        <TextView
+            android:id="@+id/tv_cat_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bordauex 2014"
+            android:gravity="left"
+            android:visibility="gone"
+            android:textColor="#aaaaaa"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg">
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_normal"
+        android:text="Enter Your Wish.."
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:background="@color/app_theme_yellow">
+        <ImageView
+            android:id="@+id/img_back_search"
+            android:layout_width="@dimen/padding_extream_large"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_normal"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_back_search"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/padding_normal"/>
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="Cancel"
+            android:visibility="gone"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/app_theme_blue"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_search_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_rectangle_white_border">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+
+                android:layout_gravity="center|center_vertical"
+                android:src="@android:drawable/ic_menu_search"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_search"
+            android:background="@null"
+            android:lines="1"
+            android:hint="Search Store Category"
+            android:layout_toLeftOf="@+id/img_clear"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center|center_vertical"
+            android:textColor="#000"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/medium_text_size"
+
+            android:completionThreshold="1"
+            android:singleLine="true"
+            >
+            <requestFocus/>
+        </EditText>
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center|center_vertical"
+                android:src="@drawable/cross_grey"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

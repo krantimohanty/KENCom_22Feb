@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0000"
+    android:padding="15dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_rounded_background"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_btn"
+    android:id="@+id/rel1"
+    android:layout_alignParentTop="true"
+    android:layout_weight="1"
+    android:layout_marginLeft="@dimen/padding_normal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Provide list name"
+        android:id="@+id/header"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/txt_size_option_menu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn"
+        android:gravity="center"
+        android:layout_weight="4">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn"
+        android:layout_below="@+id/rel1"
+        android:id="@+id/msg"
+        android:layout_margin="10dp"
+        android:gravity="left|center_vertical"
+        android:textColor="#000"
+        android:elevation="5dp"
+        android:paddingLeft="5dp"
+        android:background="@color/white"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@+id/msg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rel2"
+        android:layout_alignParentBottom="true"
+
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/app_theme_blue"
+            android:text="OK"
+            android:id="@+id/btn_ok"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_option_menu"
+            android:background="@color/transparent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/app_theme_blue"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_size_option_menu"
+            android:gravity="center"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

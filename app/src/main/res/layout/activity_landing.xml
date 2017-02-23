@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_name"
+    android:background="@drawable/landing"
+    android:tag="layout-xhdpi">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/landinglogo"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_drinks"
+                android:layout_width="120sp"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/drinkbtn"
+                android:textAllCaps="false"
+                android:layout_marginLeft="25sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_grocery"
+                android:layout_width="120sp"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                android:background="@drawable/grocebtn"
+                android:layout_marginLeft="25sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_name"
+    android:tag="layout-xhdpi"
+    android:orientation="vertical"
+    android:background="@drawable/stockup_bg"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_drinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/drinks"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_foods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/food"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/day2day"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/gifts"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>
+    -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_name"
+    android:tag="layout-xhdpi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/img_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/landing_day"/>
+            <ImageView
+                android:id="@+id/img_gourmets"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/landing_gourment"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/img_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/landing_gifts"/>
+            <ImageView
+                android:id="@+id/img_events"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/landing_events"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false">
+
+
+       <!-- <ImageView
+            android:id="@+id/img_roundright"
+            android:layout_width="@dimen/landing_page_logo_outer_width"
+            android:layout_height="@dimen/landing_page_logo_outer_width"
+            android:src="@drawable/roundright"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:clickable="false"/>
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/landing_page_logo_inner_width"
+            android:layout_height="@dimen/landing_page_logo_inner_width"
+            android:src="@drawable/inner_logo"
+            android:layout_centerInParent="true"
+            android:clickable="false"/>-->
+
+
+        <ImageView
+            android:id="@+id/img_mainproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/landing_mainproduct"
+            android:layout_centerInParent="true"
+            android:clickable="false"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

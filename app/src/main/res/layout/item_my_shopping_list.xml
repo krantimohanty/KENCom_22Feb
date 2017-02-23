@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:padding="3dp">
+    <RelativeLayout
+        android:id="@+id/rel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:background="@drawable/edittext_rectangle_border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical"
+            android:padding="2dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_customar_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="id"
+                android:textColor="@color/black"
+                android:layout_gravity="left|top"
+                android:gravity="left|bottom"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginRight="@dimen/height_btn"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_shoping_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="kasfjjfklasf"
+                android:textColor="@color/black"
+                android:layout_gravity="left|top"
+                android:gravity="left|bottom"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginRight="@dimen/height_btn"/>
+            <TextView
+                android:id="@+id/txt_shoping_list_count"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="kasfjjfklasf"
+                android:textColor="@color/grey"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_gravity="left|top"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginRight="@dimen/height_btn"/>
+        </LinearLayout>
+        <!--  <ImageView
+              android:id="@+id/img_check"
+              android:layout_width="25sp"
+              android:layout_height="25sp"
+              android:src="@drawable/radio_uncheck"
+
+              android:layout_alignParentRight="true"/>-->
+
+        <ImageView
+            android:id="@+id/chk_unique_id"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/details_arrow"
+            />
+    </RelativeLayout>
+</RelativeLayout>

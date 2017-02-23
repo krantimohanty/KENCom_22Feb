@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_option_height"
+        android:background="@color/app_theme_yellow"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_btn"
+            android:padding="@dimen/padding_normal"
+            android:elevation="4dp"
+            android:shadowColor="#cecece"
+            android:layout_gravity="center|center_vertical"/>
+        <TextView
+            android:id="@+id/txt_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Where Shall We Deliver?"
+            android:textSize="@dimen/large_text_size"
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/txt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            android:visibility="gone"
+            android:textSize="@dimen/large_text_size"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_theme_blue"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_checkout"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_done"
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="Confirm Location"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/lin_bottom_bar">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        <RelativeLayout
+            android:id="@+id/rl_addr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spc_tag_height"
+            android:layout_margin="@dimen/padding_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_rectangle_white_border">
+                <ImageView
+                    android:id="@+id/img_cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/cross_grey"/>
+                <AutoCompleteTextView
+                    android:id="@+id/et_moved_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_toLeftOf="@+id/img_cross"
+                    android:textSize="@dimen/small_text_size"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/img_cur_loc"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@+id/rl_addr"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/padding_small"
+            android:src="@drawable/icon_my_address_location"
+            android:background="@color/white"/>
+        <RelativeLayout
+            android:layout_width="40sp"
+            android:layout_height="60sp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/btn_get_position"
+                android:layout_width="20sp"
+                android:layout_height="40sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_normal"
+                android:src="@drawable/map_icon_pin"/>
+        </RelativeLayout>
+        <!--<TextView
+            android:id="@+id/txt_moved_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:layout_marginBottom="@dimen/padding_small"/>-->
+    </RelativeLayout>
+</RelativeLayout>
+             

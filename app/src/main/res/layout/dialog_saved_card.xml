@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg">
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_normal"
+        android:text="Enter Your Wish.."
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:background="@color/app_theme_yellow">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Saved Card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rel2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/app_theme_blue"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_option_menu"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/txt_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/app_theme_blue"
+            android:text="OK"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_size_option_menu"
+            android:gravity="center"
+            android:visibility="visible"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+</RelativeLayout>

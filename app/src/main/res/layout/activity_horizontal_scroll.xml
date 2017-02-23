@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cecece"
+    android:layout_weight="25">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="@drawable/inner_logo"
+        >
+        <HorizontalScrollView
+            android:id="@+id/hs_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/ll_hs_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:background="#00ff00"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Featured Products"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:src="@drawable/featuredarrow_left"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="180dp"
+                >
+
+            </android.support.v4.view.ViewPager>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:src="@drawable/featuredarrow_right"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:background="#cecece"
+        android:layout_below="@+id/lin_vPager"
+
+        />
+
+</RelativeLayout>

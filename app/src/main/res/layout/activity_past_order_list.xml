@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_option_height"
+        android:background="@color/app_theme_yellow"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_btn"
+            android:padding="@dimen/padding_normal"
+            android:shadowColor="#cecece"
+            android:layout_gravity="center|center_vertical"/>
+        <TextView
+            android:id="@+id/txt_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:text="Past Orders"
+            android:textSize="@dimen/large_text_size"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/txt_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="@dimen/large_text_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_order_dtl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/black"
+        android:text="Your History"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_normal"
+        android:textSize="@dimen/large_text_size"/>
+    <ListView
+        android:id="@+id/lv_past_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+
+        android:background="@color/grey_light"/>
+</LinearLayout>

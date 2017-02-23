@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#3F51B5</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+   <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/grey_dark</item>
+        <item name="colorControlActivated">@color/app_theme_yellow</item>
+       <item name="android:minHeight">20dip</item>
+       <item name="android:maxHeight">22dip</item>
+    </style>
+    <!--Added By Partha on 06.09.16-->
+    <style name="stockUpRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">52dip</item>
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/rating_custom_bar</item>
+    <item name="android:minHeight">16dip</item>
+    <item name="android:maxHeight">19dip</item>
+
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">19dip</item>
+    </style>
+</resources>

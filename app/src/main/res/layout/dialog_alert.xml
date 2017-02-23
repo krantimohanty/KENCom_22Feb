@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_rounded_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_rounded_background"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rel1"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="We are rolling out!"
+                android:textStyle="bold"
+                android:gravity="center|bottom"
+                android:id="@+id/header"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/txt_size_option_menu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="4.9"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_extra_large">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:id="@+id/msg"
+                android:textSize="@dimen/medium_text_size"
+                android:text="KenCommerce is rolling out rapidly to major hubs across Bhubaneswar in the coming weeks. Once we reach your area we will let you know, but feel free to browse so long!"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:paddingLeft="5dp"
+                android:gravity="center|center_vertical"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_below="@+id/msg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/rel2"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/app_theme_blue"
+                android:text="SIGN IN"
+                android:id="@+id/btn_sign_in"
+                android:gravity="center"
+                android:textSize="@dimen/txt_size_option_menu"
+                android:background="@color/transparent"/>
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:textColor="@color/app_theme_blue"
+                android:text="BROWSE"
+                android:id="@+id/btn_browse"
+                android:layout_weight="1"
+                android:textSize="@dimen/txt_size_option_menu"
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="@color/transparent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

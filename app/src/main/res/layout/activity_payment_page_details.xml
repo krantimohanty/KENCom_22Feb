@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_custom_top"
+        android:background="@color/header_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:weightSum="100"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Name"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="@dimen/large_text_size"
+                android:paddingBottom="@dimen/padding_small"
+                android:singleLine="true"
+                android:textSize="@dimen/large_text_size"
+                android:background="@null"/>
+                <EditText
+                    android:id="@+id/ext_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:text="Bryan Williams"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:singleLine="true"
+
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:textSize="@dimen/small_text_size"
+
+                    android:background="@drawable/edittext_rectangle_border"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_email_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Email Address"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size"
+                    android:background="@null"/>
+                <EditText
+                    android:id="@+id/ext_email_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:text="bryanwilliams@hotmail.com"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:textSize="@dimen/small_text_size"
+
+                    android:background="@drawable/edittext_rectangle_border"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Mobile Number"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="@dimen/large_text_size"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size"
+                    android:background="@null"/>
+                <EditText
+                    android:id="@+id/ext_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_weight="50"
+                    android:text="027 9741 9741"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:textSize="@dimen/small_text_size"
+
+                    android:background="@drawable/edittext_rectangle_border"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="@dimen/large_text_size"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size"
+                    android:background="@null"/>
+                <EditText
+                    android:id="@+id/ext_old_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:hint="Old Password"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:inputType="textWebPassword"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:textSize="@dimen/small_text_size"
+
+                    android:background="@drawable/edittext_rectangle_border"/>
+
+                <EditText
+                    android:id="@+id/ext_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:hint="New Password"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:inputType="textWebPassword"
+                    android:layout_marginBottom="@dimen/padding_extra_large"
+                    android:textSize="@dimen/small_text_size"
+
+                    android:background="@drawable/edittext_rectangle_border"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentBottom="true"
+        android:background="#048bcd"
+        >
+
+
+
+            <TextView
+                android:id="@+id/txt_edit_my_details"
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="PROCEEDS"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

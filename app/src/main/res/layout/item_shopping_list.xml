@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:padding="3dp">
+    <RelativeLayout
+        android:id="@+id/rel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/padding_small"
+        android:background="@drawable/edittext_rectangle_border">
+    <TextView
+        android:id="@+id/txt_shoping_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="kasfjjfklasf"
+        android:textColor="@color/black"
+        android:gravity="center|center_vertical"
+        android:layout_marginRight="@dimen/height_btn"/>
+  <!--  <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:src="@drawable/radio_uncheck"
+
+        android:layout_alignParentRight="true"/>-->
+
+        <CheckBox
+            android:id="@+id/chk_unique_id"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/radio_uncheck"
+            android:checked="false"
+            android:tag="1"/>
+    </RelativeLayout>
+</RelativeLayout>

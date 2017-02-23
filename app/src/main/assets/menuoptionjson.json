@@ -1,0 +1,110 @@
+{"parentMenu":[
+  {
+    "menuName": "Our Stores",
+    "menuId": "1",
+    "menuoption": [
+      {
+        "menuName": "Welcome",
+        "menuId": "8"
+
+      },
+      {
+        "menuName": "Gourmet Treats",
+        "menuId": "9"
+      },
+      {
+        "menuName": "Day-To-Day",
+        "menuId": "10"
+      },
+      {
+        "menuName": "Gifts",
+        "menuId": "11"
+      },
+      {
+        "menuName": "Events & Services",
+        "menuId": "12"
+      }
+
+    ]
+  },
+  {
+    "menuName": "Profile",
+    "menuId": "2",
+    "menuoption": [
+      {
+        "menuName": "My Details",
+        "menuId": "13"
+
+      },{
+        "menuName": "Payment Details",
+        "menuId": "14"
+
+      },
+      {
+        "menuName": "My Addresses",
+        "menuId": "15"
+      },{
+        "menuName": "Wishlist",
+        "menuId": "16"
+
+      },
+      {
+        "menuName": "Shopping Lists",
+        "menuId": "17"
+      },
+      {
+        "menuName": "Past Orders",
+        "menuId": "18"
+      },
+      {
+        "menuName": "Track Orders",
+        "menuId": "19"
+      }
+    ]
+  },
+  {
+    "menuName": "Cart",
+    "menuId": "3"
+  },
+
+
+  {
+    "menuName": "Sign In",
+    "menuId": "4"
+  },
+  {
+    "menuName": "Enter Promo Code",
+    "menuId": "5"
+  },
+  {
+    "menuName": "Free Delivery",
+    "menuId": "6"
+  },
+  {
+    "menuName": "Support",
+    "menuId": "7",
+    "menuoption": [
+      {
+        "menuName": "Where We Serve",
+        "menuId": "20"
+
+      },
+      {
+        "menuName": "FAQs",
+        "menuId": "21"
+
+      },
+      {
+        "menuName": "Privacy Policy",
+        "menuId": "22"
+
+      },
+      {
+        "menuName": "Terms & Conditions",
+        "menuId": "23"
+
+      }
+    ]
+  }
+
+]}

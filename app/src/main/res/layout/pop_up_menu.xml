@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/grey" >
+
+    <ListView
+        android:id="@+id/pop_up_menu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#2b6b92"
+        android:background="@color/white"
+        android:layout_margin="2dp"
+        android:layout_gravity="center|center_vertical"
+        android:scrollbars="none">
+    </ListView>
+
+
+</LinearLayout>

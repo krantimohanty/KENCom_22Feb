@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:globalmlledating="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="40sp"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_dialog_bg">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_dialog_header_bg"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/sroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_title"
+        android:overScrollMode="never"
+        android:padding="10sp"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/txt_dialog_privacy_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sroll"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/privacy_txt_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/inner_logo"
+            android:gravity="center"
+            android:text="Accept"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/privacy_txt_reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/inner_logo"
+            android:gravity="center"
+            android:text="Reject"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_progress"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/inner_logo" />
+    </LinearLayout>
+</RelativeLayout>

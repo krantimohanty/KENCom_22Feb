@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.swash.kencommerce"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar', 'x86', 'armeabi-v7a', 'mips', 'armeabi'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:support-annotations:25.0.1'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile 'com.appsflyer:af-android-sdk:4+@aar'
+    compile 'io.card:android-sdk:5.4.2'
+    compile 'com.google.android.gms:play-services-analytics:9.6.1'
+
+}
+
+//Error:A problem occurred configuring project ':app'.
+//> Could not resolve all dependencies for configuration ':app:_debugApkCopy'.
+//        > Could not resolve com.appsflyer:af-android-sdk:4+.
+//Required by:
+//KenCommerce_10thDec:app:unspecified
+//> Could not resolve com.appsflyer:af-android-sdk:4+.
+//> Failed to list versions for com.appsflyer:af-android-sdk.
+//        > Unable to load Maven meta-data from https://jcenter.bintray.com/com/appsflyer/af-android-sdk/maven-metadata.xml.
+//> Could not GET 'https://jcenter.bintray.com/com/appsflyer/af-android-sdk/maven-metadata.xml'.
+//        > jcenter.bintray.com
+
+
+// ADD THIS AT THE BOTTOM
+//Project Id: kencommerce-5dee6
+//Web API Key: AIzaSyAqrWGIA065xcMzTzuVzRJoEeyYu-8cTjg
+//App ID: 1:671702742431:android:09cc71fcda905a1f
+
+
+apply plugin: 'com.google.gms.google-services'
+

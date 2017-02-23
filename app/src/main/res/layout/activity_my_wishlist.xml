@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_custom_top"
+        android:background="@color/header_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hearder_height"
+        android:gravity="center"
+        android:id="@+id/lin_search"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:elevation="5dp"
+        android:background="@drawable/background_white">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search your favourite shopping list"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:layout_weight="5"
+            android:background="#00000000"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mylist_search"
+            android:padding="5sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_shopping_list_count"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Shopping list (4)"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/medium_text_size"
+        android:visibility="gone"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/lin_search"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:background="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shopping_list_count"
+        android:layout_above="@+id/lin_bottom_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+           <com.swash.kencommerce.ExpandableHeightListView
+                android:id="@+id/lv_shoping_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/lin_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentBottom="true"
+        android:background="#048bcd"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_create_new_list"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CREATE NEW LIST"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
